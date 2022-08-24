@@ -69,3 +69,22 @@ function favouriteFruit(theme) {
         setProp('--dark', "#222222")
     }
 }
+
+ let dizi = [
+   "#D24D57",
+   "#e74c3c",
+   "#f1c40f",
+   "#2c3e50",
+   "#8e44ad",
+   "#bdc3c7",
+   "#1abc9c",
+   "#3498db",
+   "#95a5a6",
+ ];
+
+ let renk = document.getElementById("renk");
+
+ renk.onclick = function () {
+   let rasgele = Math.round(Math.random() * dizi.length);
+   document.body.style.background = dizi[rasgele];
+ };
